@@ -32,7 +32,7 @@ export default function Hero() {
                     </span>
                 </h1>
                 
-                <p className="text-xl md:text-lg text-muted-foreground mb-15 md:mb-30 max-w-2xl mx-auto leading-relaxed font-light">
+                <p className="text-lg md:text-lg text-muted-foreground mb-15 md:mb-30 max-w-2xl mx-auto leading-relaxed font-light">
                     No Resumes. No Applications. Just an intelligent matching engine that connects talented <a onClick={() => scrollToAlgorithm('students')} className='font-bold text-secondary/90 hover:bg-secondary/30 hover:cursor-pointer'>students</a> with the right <a onClick={() => scrollToAlgorithm('employers')} className='font-bold text-secondary/90 hover:bg-secondary/30 hover:cursor-pointer'>employers</a>.
                 </p>
 

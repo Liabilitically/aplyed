@@ -114,7 +114,7 @@ export function Features() {
                                 Proprietary Matching Algorithm
                             </h3>
                             
-                            <p className="text-lg text-white/70 max-w-4xl mx-auto mb-26 font-light leading-relaxed">
+                            <p className="text-md text-white/70 max-w-4xl mx-auto mb-26 font-light leading-relaxed">
                                 Our machine learning models don't just match keywords. They understand potential, cultural fit, and trajectory, continuously learning from every successful placement to make the next one even better.
                             </p>
                             
