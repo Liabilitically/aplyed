@@ -26,7 +26,7 @@ export default function Hero() {
 
             <div className="container relative z-20 px-4 pb-10 text-center max-w-5xl mx-auto justify-center">
                 
-                <h1 className="text-6xl md:text-8xl font-lexend font-bold text-primary pb-8 pt-30 leading-[1.1] tracking-tight">
+                <h1 className="text-6xl md:text-8xl font-lexend font-bold text-primary pb-8 pt-10 md:pt-30 leading-[1.1] tracking-tight">
                     <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-secondary to-primary bg-size-[200%_auto] animate-gradient">
                     Hiring that feels Human.
                     </span>
