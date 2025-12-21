@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+.custom-shape-divider-top-1766040459 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1766040459 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 97px;
+}
+
+.custom-shape-divider-top-1766040459 .shape-fill {
+    fill: #F9FAFB;
+}
+
+@theme inline {
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Elevated Professional Palette */
+  /* Background: Clean White / Very subtle cool grey */
+  --color-background: hsl(210 20% 98%); 
+  /* Foreground: Dark Slate */
+  --color-foreground: hsl(222 47% 11%);
+  
+  /* Primary: Professional Gradient Anchors */
+  /* Deep Royal Blue -> Transitioning to warmer tones in gradients */
+  --color-primary: hsl(222 47% 11%);
+  --color-primary-foreground: hsl(210 40% 98%);
+
+  /* Secondary: Warm Accent (Human Element) */
+  /* Terracotta but slightly more refined/muted */
+  --color-secondary: hsl(12 76% 55%);
+  --color-secondary-foreground: hsl(0 0% 100%);
+
+  /* Muted: Cool Grays */
+  --color-muted: hsl(210 40% 96%);
+  --color-muted-foreground: hsl(215 16% 47%);
+
+  /* Accent: Subtle Blue-Grey */
+  --color-accent: #7488a3;
+  --color-accent-foreground: hsl(222 47% 11%);
+
+  /* Card colors */
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(222 47% 11%);
+  
+  /* Border */
+  --color-border: hsl(214 32% 91%);
+  --color-input: hsl(214 32% 91%);
+  
+  --color-ring: hsl(222 47% 11%);
+
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(222 47% 11%);
+
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+
+  --radius: 0.5rem;
+  
+  --shadow-warm: 0 4px 14px 0 rgba(12, 12, 12, 0.05);
+
+  --font-lexend: 'Lexend', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+  
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
