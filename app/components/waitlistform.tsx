@@ -10,7 +10,7 @@ export default function WaitlistForm() {
     const [student_not_employer, setStudentNotEmployer] = useState(true);
 
     return (
-        <div className="flex flex-col bg-background px-20 py-1 text-center items-center justify-center" id="waitlist-form">
+        <div className="flex flex-col bg-background py-1 text-center items-center justify-center" id="waitlist-form">
             <h2 className="text-7xl md:text-8xl font-bold mb-8 text-primary/90" id="waitlist-form-heading">Are you ready?</h2>
             {!submitted && (
                 <p className="text-lg text-muted-foreground mb-20 font-light">
@@ -29,8 +29,8 @@ export default function WaitlistForm() {
                     onChange={(e) => {setEmail(e.target.value)}}
                     />
                     <div className="tabs tabs-box bg-muted rounded-full w-fit gap-2 flex flex-row mb-20" id="role-picker">
-                        <input type="radio" checked={student_not_employer} onChange={() => setStudentNotEmployer(true)} name="role" className="tab text-primary checked:text-background rounded-full duration-100 checked:bg-primary/95 checked:shadow-md px-6" aria-label="Student" />
-                        <input type="radio" checked={!student_not_employer} onChange={() => setStudentNotEmployer(false)} name="role" className="tab text-primary checked:text-background rounded-full duration-100 checked:bg-primary/95 checked:shadow-md px-6" aria-label="Employer" />
+                        <input type="radio" checked={student_not_employer} onChange={() => setStudentNotEmployer(true)} name="role" className="tab text-primary checked:text-background rounded-full duration-100 checked:bg-primary/95 checked:shadow-md px-4" aria-label="Student" />
+                        <input type="radio" checked={!student_not_employer} onChange={() => setStudentNotEmployer(false)} name="role" className="tab text-primary checked:text-background rounded-full duration-100 checked:bg-primary/95 checked:shadow-md px-4" aria-label="Employer" />
                     </div>
                     <button 
                     type="submit"
