@@ -18,7 +18,7 @@ export default function WaitlistForm() {
                 </p>
             )}
             {!submitted && (
-                <form className="flex flex-col justify-center w-fit items-center" onSubmit={(e) => {e.preventDefault()}}>
+                <form className="flex flex-col justify-center items-center" onSubmit={(e) => {e.preventDefault()}}>
                     <input 
                     required
                     id="email-input"
@@ -28,7 +28,7 @@ export default function WaitlistForm() {
                     content="email"
                     onChange={(e) => {setEmail(e.target.value)}}
                     />
-                    <div className="tabs tabs-box bg-muted rounded-full w-fit gap-2 flex flex-row mb-20" id="role-picker">
+                    <div className="tabs tabs-box bg-muted rounded-full w-[200] gap-2 flex flex-row mb-20" id="role-picker">
                         <input type="radio" checked={student_not_employer} onChange={() => setStudentNotEmployer(true)} name="role" className="tab text-primary checked:text-background rounded-full duration-100 checked:bg-primary/95 checked:shadow-md px-4" aria-label="Student" />
                         <input type="radio" checked={!student_not_employer} onChange={() => setStudentNotEmployer(false)} name="role" className="tab text-primary checked:text-background rounded-full duration-100 checked:bg-primary/95 checked:shadow-md px-4" aria-label="Employer" />
                     </div>
