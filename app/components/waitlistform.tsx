@@ -18,7 +18,7 @@ export default function WaitlistForm() {
                 </p>
             )}
             {!submitted && (
-                <form className="flex flex-col justify-center items-center" onSubmit={(e) => {e.preventDefault()}}>
+                <form className="flex flex-col justify-center w-fit items-center" onSubmit={(e) => {e.preventDefault()}}>
                     <input 
                     required
                     id="email-input"
