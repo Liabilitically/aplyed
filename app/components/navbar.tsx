@@ -14,12 +14,6 @@ export default function Navbar() {
                 <span className="select-none cursor-pointer font-sans text-3xl font-bold tracking-tight text-secondary group-hover:text-primary/90 transition-colors" onClick={() => scrollToAlgorithm('hero-section')}>
                     aplyed
                 </span>
-                <button 
-                className="btn rounded-full bg-primary text-primary-foreground hover:bg-primary/90 px-6 h-12 font-medium shadow-md shadow-primary/20 transition-all duration-300 hover:shadow-primary/30 hover:-translate-y-0.5 tracking-wide"
-                onClick={() => scrollToAlgorithm('waitlist-form')}
-                >
-                    I'm Curious
-                </button>
             </div>
         </nav>
     );

@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "aplyed | Hiring that feels Human",
-  description: "No Resumes. No Applications. Just an intelligent matching engine that connects talented students with the right employers.",
+  title: "aplyed | Startups hiring Students",
+  description: "This is a hiring platform for startups to find motivated students for early-stage roles.",
 };
 
 export default function RootLayout({
@@ -27,11 +27,11 @@ export default function RootLayout({
     <html lang="en">
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-      <meta property="og:title" content="aplyed | Hiring that feels Human" />
-      <meta property="og:description" content="No Resumes. No Applications. Just an intelligent matching engine that connects talented students with the right employers." />
+      <meta property="og:title" content="aplyed | Startups hiring Students" />
+      <meta property="og:description" content="This is a hiring platform for startups to find motivated students for early-stage roles." />
       <meta property="og:type" content="website" />
-      <meta name="twitter:title" content="aplyed | Hiring that feels Human" />
-      <meta name="twitter:description" content="No Resumes. No Applications. Just an intelligent matching engine that connects talented students with the right employers." />
+      <meta name="twitter:title" content="aplyed | Startups hiring Students" />
+      <meta name="twitter:description" content="This is a hiring platform for startups to find motivated students for early-stage roles." />
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

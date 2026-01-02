@@ -1,9 +1,6 @@
-import Image from "next/image";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
-import { Features } from "./components/features";
 import Footer from "./components/footer";
-import WaitlistForm from "./components/waitlistform";
 
 export default function Home() {
   return (
@@ -11,8 +8,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Features />
-        <WaitlistForm />
       </main>
       <Footer />
     </div>
